@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {BtnOne, BtnTwo} from "./components/button/button.component";
+import {Signinput, Payinput} from "./components/input/input.component";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <Signinput id="sign in" label="password" height="60px" width="300px"/>
+      <Payinput placeholder="cvv" height="56px"/>
+      <BtnOne width="305px" height="70px" title="login"/>
+      <BtnTwo width="305px" height="70px" title="subscribed"/>
     </div>
   );
 }

@@ -1,38 +1,59 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* buttons*/
+.btn-background{
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  background: #50B12F;
+ color: #fff;
+ border-radius: 16px;
+ font-size:16px;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
   text-align: center;
+  line-height: 18.75px;
+  margin-top: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-border{
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #50B12F;
+  border-radius: 16px;
+  font-size:16px;
+  background-color: #fff;
+  border: none;
+  border:2px solid #50B12F;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*inputs*/
+input{
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-control input{
+  border-bottom: 1px solid #807E7E;
 }
-
-.App-link {
-  color: #61dafb;
+.input-holder{
+  margin-bottom: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-control input::placeholder, .input-control-sign label{
+  font-size:1.1rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #807E7E;
+  text-transform: capitalize;
+}
+.input-control-sign input{
+  background-color:#E3E2E2;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  padding: 10px;
 }
