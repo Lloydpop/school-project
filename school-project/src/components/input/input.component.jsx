@@ -8,11 +8,8 @@ const Signinput = (props) => {
     const width= props.width
     return ( <div className="form-section">
       <div className="input-control-sign">
-        <div className="input-holder">
-           <label htmlFor={Id}>{label}</label>
-        </div>
         <div>
-          <input type={type} name={name} id={Id} style={{width:width, height:height}}/>
+          <input type={type} name={name} id={Id} style={{width:width, height:height}} placeholder={label}/>
         </div>
       </div>
     </div> );

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /* buttons*/
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
 .btn-background{
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
@@ -9,10 +15,11 @@
  font-size:16px;
   border: none;
   cursor: pointer;
-  text-transform: capitalize;
   text-align: center;
   line-height: 18.75px;
   margin-top: 10px;
+  padding: 6px;
+  text-transform: uppercase;
 }
 .btn-border{
   font-weight: 400;
@@ -36,6 +43,7 @@ input{
   border: none;
   outline: none;
   background-color: #fff;
+  margin-bottom: 20px;
 }
 .input-control input{
   border-bottom: 1px solid #807E7E;
@@ -43,17 +51,66 @@ input{
 .input-holder{
   margin-bottom: 15px;
 }
-.input-control input::placeholder, .input-control-sign label{
-  font-size:1.1rem;
-  font-weight: 500;
+ input::placeholder, .input-control-sign label{
+  font-size:16px;
+  font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #807E7E;
   text-transform: capitalize;
 }
 .input-control-sign input{
-  background-color:#E3E2E2;
+  background-color:#E5E5E5;
   border: none;
   border-radius: 15px;
   outline: none;
-  padding: 10px;
+  padding-left: 16px;
+}
+.container{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 500px;
+  padding: 90px 0px 90px 0px;
+  background-color: #fff;
+}
+header{
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+.vector{
+  position: absolute;
+  cursor: pointer;
+  left: -30px;
+  top: 10px;
+  
+
+}
+header p{
+  color:#49A52A;
+  text-transform:uppercase;
+  font-size:20px;
+  font-weight: 400;
+}
+.txt p{
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.green{
+  color: #49A52A;
+}
+a{
+  color: #49A52A;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.inputs{
+  position: relative;
+  margin-bottom: 30px;
+}
+.forgot{
+  position: absolute;
+  right:90px;
 }
