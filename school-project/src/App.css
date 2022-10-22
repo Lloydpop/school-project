@@ -2,9 +2,12 @@
 /* buttons*/
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 .btn-background{
   font-weight: 400;
@@ -12,14 +15,17 @@ body{
   background: #50B12F;
  color: #fff;
  border-radius: 16px;
- font-size:16px;
+ font-size:17px;
   border: none;
   cursor: pointer;
   text-align: center;
   line-height: 18.75px;
+  width: 100%;
+  margin: auto;
   margin-top: 10px;
   padding: 6px;
-  text-transform: uppercase;
+  display: block;
+  text-transform:capitalize;
 }
 .btn-border{
   font-weight: 400;
@@ -35,82 +41,144 @@ body{
   text-align: center;
   margin-top: 10px;
 }
-/*inputs*/
-input{
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  border: none;
-  outline: none;
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-.input-control input{
-  border-bottom: 1px solid #807E7E;
-}
-.input-holder{
-  margin-bottom: 15px;
-}
- input::placeholder, .input-control-sign label{
-  font-size:16px;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  color: #807E7E;
-  text-transform: capitalize;
-}
-.input-control-sign input{
-  background-color:#E5E5E5;
-  border: none;
-  border-radius: 15px;
-  outline: none;
-  padding-left: 16px;
-}
 .container{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  max-width: 500px;
-  padding: 90px 0px 90px 0px;
-  background-color: #fff;
-}
-header{
-  position: relative;
-  width: 70%;
-  margin: auto;
-}
-.vector{
-  position: absolute;
-  cursor: pointer;
-  left: -30px;
-  top: 10px;
-  
-
-}
-header p{
-  color:#49A52A;
-  text-transform:uppercase;
-  font-size:20px;
-  font-weight: 400;
-}
-.txt p{
-  font-size: 18px;
-  text-transform: capitalize;
-}
-.green{
-  color: #49A52A;
+  display: grid;
+  grid-template-columns:7fr 5fr;
+  min-height: 100vh;
+  margin-bottom: 120px;
 }
 a{
-  color: #49A52A;
-  text-transform: uppercase;
+  color: #50B12F;
+  text-transform: capitalize;
   text-decoration: none;
+}
+.logo{
+  background-color: #50B12F;
+  max-width:817px;
+  clip-path: circle(90.3% at 0 46%);
+  display: flex;
+  padding-left: 120px;
+  align-items: center;
+}
+.logo-text{
+  margin-left: 170px;
+  color: #fff;
+
+}
+.logo-text span{
+  color: yellow;
+  margin-right: 5px;
+}
+form{
+  text-align: center;
+}
+.header{
+  margin-top: 60px;
+  text-transform: capitalize;
+}
+.header p{
+  color: gray;
+  margin-top: 10px;
+}
+.green{
+  background-color: #50B12F;
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.border{
+  border: 1px solid #50B12F;
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.tick{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
+.input-control-sign input{
+  border: none;
+  border-bottom: 1px solid gray;
+  display: block;
+  width: 100%;
+  margin: auto;
+  outline: none;
+  color: #000;
+}
+label{
+  display: block;
+  text-align: left;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  color: rgb(73, 73, 73);
+}
+input::placeholder{
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.input-container{
+  width: 60%;
+  margin: auto;
 }
 .inputs{
   position: relative;
-  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.icon{
+  background-color: #50B12F;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -30px;
+}
+.btn{
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 .forgot{
+  position: relative;
+}
+.forgot a{
   position: absolute;
-  right:90px;
+  right: 0;
+  top: 80px;
+}
+.rect{
+  position: relative;
+}
+.rect-i{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.644);
+}
+.rect-i:nth-child(1){
+  left:20px;
+}
+.rect-i:nth-child(2){
+  right:150px;
+}
+.rect-i:nth-child(3){
+  left:-20px;
+  top:-30px;
+}
+.rect-i:nth-child(4){
+  left: 30px;
+  top: -35px;
+}
+@media screen and (max-width:1200px) {
+  .logo{
+    display: none;
+  }
+  .container{
+    display: block;
+    text-align: center;
+  }
 }
